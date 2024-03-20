@@ -24,7 +24,7 @@ function Register() {
 
     try {
       // Realiza la petición POST al servidor para iniciar sesión
-      const response = await fetch("/", {
+      const response = await fetch("/v1/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
